@@ -5,24 +5,32 @@ const { Category, User, Todolist } = models;
 
 module.exports = {
   getTodolists: async (req, res) => {
-    const data = await Todolist.findAll({
-      include: [{ model: User }, { model: Category }],
-    });
-    res.status(200).json({
-      data,
-    });
+    try {
+      const data = await Todolist.findAll({
+        include: [{ model: User }, { model: Category }],
+      });
+      res.status(200).json({
+        data,
+      });
+    } catch (error) {
+      res.status(500).json({ msg: error.message });
+    }
   },
   getTodolistById: async (req, res) => {
-    const { id } = req.params;
-    const data = await Todolist.findOne({
-      where: {
-        id,
-      },
-      include: [{ model: User }, { model: Category }],
-    });
-    res.status(200).json({
-      data,
-    });
+    try {
+      const { id } = req.params;
+      const data = await Todolist.findOne({
+        where: {
+          id,
+        },
+        include: [{ model: User }, { model: Category }],
+      });
+      res.status(200).json({
+        data,
+      });
+    } catch (error) {
+      res.status(500).json({ msg: error.message });
+    }
   },
   createTodolist: async (req, res) => {
     try {

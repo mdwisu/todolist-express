@@ -39,22 +39,25 @@ Content-Type: application/json
 
 ### ! get a category
 GET http://localhost:5000/categories
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwMTI0NjgsImV4cCI6MTY2ODAxMjUyOH0.LaEzFw9Wfdm53zvazm3mwbsu7pDo-P72jB38z86z3ec
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwNzY5ODUsImV4cCI6MTY2ODA3NzA0NX0.2JfQLjBE4zj4ZXxbKrsQKqkkCNXZ4f5jfu0c5tgIqOw
 
 ### get a category by id
 GET http://localhost:5000/categories/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwNzY5ODUsImV4cCI6MTY2ODA3NzA0NX0.2JfQLjBE4zj4ZXxbKrsQKqkkCNXZ4f5jfu0c5tgIqOw
 
 ### create a category
 POST http://localhost:5000/categories
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 {
-    "name": "kendaraan",
+    "name": "asdf"
 }
 
 ### update a category
 patch http://localhost:5000/categories/1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 {
     "name": "kendaraan"
@@ -62,17 +65,21 @@ Content-Type: application/json
 
 ### delete a category
 delete http://localhost:5000/categories/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 ### ! get a todolist
 GET http://localhost:5000/todolists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 ### get a todolist by id
 GET http://localhost:5000/todolists/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 
 ### create a todolist
 POST http://localhost:5000/todolists
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 {
     "title": "coba title",
@@ -85,6 +92,7 @@ Content-Type: application/json
 ### update a todolist
 PATCH http://localhost:5000/todolists/1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg
 
 {
     "title": "update title",
@@ -96,3 +104,4 @@ Content-Type: application/json
 
 ### Delete a todolist
 DELETE http://localhost:5000/todolists/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImZ1bGxuYW1lIjoiTXVoYW1tYWQgRHdpIFN1c2FudG8iLCJlbWFpbCI6ImR3aUBnbWFpbC5jb20iLCJpYXQiOjE2NjgwODIxMzAsImV4cCI6MTY2ODA4MjE5MH0.MFyLPFUMBzUj7F8VSfNmNQto2mXhAhx_KfEHD-m7Gdg

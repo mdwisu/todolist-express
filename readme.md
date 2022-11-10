@@ -7,7 +7,13 @@ npm run migrate:up
 ```
 2. create seeds
 ```scripts
-<!-- create seed -->
 npm run seed:up
 ```
-3. 
+3. run api
+```scripts
+npm run dev
+<!-- or -->
+nodemon app
+```
+
+4. api in file ./request.rest using exrension Rest Client
