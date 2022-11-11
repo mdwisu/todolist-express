@@ -16,4 +16,4 @@ npm run dev
 nodemon app
 ```
 
-4. api in file ./request.rest using exrension Rest Client
+4. api in file ./request.rest using extension Rest Client
