@@ -1,11 +1,8 @@
 {
   "build": {
-    "builder": "NIXPACKS",
-    "migrate:up": "npx sequelize-cli db:migrate",
-    "seed:up": "npx sequelize-cli db:seed:all"
+    "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "node app",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
